@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ Task 7 """
 from typing import List, Union, Tuple
 
