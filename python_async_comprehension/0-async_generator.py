@@ -2,9 +2,9 @@
 """Task 0"""
 import asyncio
 import random
+from typing import AsyncGenerator
 
-
-async def async_generator():
+async def async_generator() -> AsyncGenerator[float, None, None]:
     """
     loop 10 times
     each time asynchronously wait 1 second
