@@ -7,6 +7,5 @@ def schools_by_topic(mongo_collection, topic):
     output = []
     query = {"topics": {"$in": [topic]}}
     for doc in mongo_collection.find(query):
-        print(doc)
         output.append(doc)
     return output
