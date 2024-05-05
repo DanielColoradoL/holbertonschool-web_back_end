@@ -54,8 +54,8 @@ class Server:
         output["page"] = page
 
         no_pages = round(len(self.__dataset) / page_size)
-        next_page = page + 1 if page <= no_pages else None
-        prev_page = page - 1 if page > 0 else None
+        next_page = page + 1 if page < no_pages else None
+        prev_page = page - 1 if page > 1 else None
 
         output["total_pages"] = no_pages
         output["next_page"] = next_page
