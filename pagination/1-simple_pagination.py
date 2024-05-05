@@ -36,6 +36,7 @@ class Server:
         Return small dataset out of dataset
         based on page and page size
         """
+        self.dataset()
         assert isinstance(page, int) and isinstance(page_size, int)
         assert page > 0 and page_size > 0
         list_index = index_range(page, page_size)
